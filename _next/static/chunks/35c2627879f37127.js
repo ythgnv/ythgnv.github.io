@@ -1,0 +1,7 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,77136,e=>{"use strict";var t=e.i(43476),r=e.i(71645),n=e.i(57688),o=e.i(42923);function s({options:e,placeholder:s="Выберите значение",onChange:a,className:l=""}){let[i,c]=(0,r.useState)(!1),[d,u]=(0,r.useState)(""),x=(0,r.useRef)(null);return(0,r.useEffect)(()=>{let e=e=>{x.current&&!x.current.contains(e.target)&&c(!1)};return document.addEventListener("mousedown",e),()=>document.removeEventListener("mousedown",e)},[]),(0,t.jsxs)("div",{ref:x,className:`relative inline-block w-64 ${l}`,children:[(0,t.jsxs)("div",{onClick:()=>c(e=>!e),className:`
+          flex items-center justify-between
+          border border-black rounded-xl px-4 py-3
+          text-[18px] cursor-pointer select-none
+          transition-colors duration-200
+          ${i?"border-[#000EFF]":"hover:border-[#000EFF]"}
+        `,children:[(0,t.jsx)("span",{className:`${d?"text-black":"text-gray-400"} text-2xl truncate`,children:d||s}),(0,t.jsx)(n.default,{src:o.default,alt:"arrow",className:`w-6 h-6 transition-transform duration-300 ${i?"rotate-0":"rotate-180"}`})]}),i&&(0,t.jsx)("ul",{className:" absolute z-10 left-0 mt-2 w-full border border-gray-300 bg-white  rounded-xl shadow-lg overflow-hidden animate-fadeIn ",children:e.map(e=>(0,t.jsx)("li",{onClick:()=>{u(e),c(!1),a?.(e)},className:" px-4 py-2 text-2xl cursor-pointer hover:bg-[#000EFF0D] transition-colors duration-150 ",children:e},e))})]})}e.s(["default",()=>s])}]);
